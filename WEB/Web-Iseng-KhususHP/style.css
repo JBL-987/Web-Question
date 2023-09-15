@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+  --bg-color: rgb(0, 0, 0);
+  --text-color: #ffffff;
+  --main-color: rgb(133, 120, 51);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
+.about-img {
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.about-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-color);
+}
+
+.about-content {
+  text-align: center;
+}
+
+.about-content h1 {
+  font-size: 2.6rem;
+}
+
+.about-content2 {
+  text-align: center;
+  line-height: 80;
+}
+
+.about-content2 h2 {
+  font-size: 1.5rem;
+}
+
+.about-content2 p {
+  font-size: 1rem;
+}
+
+.about-img2 {
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 270%;
+  transform: translate(-50%, -50%);
+}
+
+.about-img2 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-color);
+}
+
+
+.btn-box {
+  height: 90px;
+  width: 260px;
+  position: relative;
+  left: 20%;
+  top: 10%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px -2px #444444;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.label1,
+.label2 {
+  display: block;
+  height: 180px;
+  width: 130px;
+  background: linear-gradient(to bottom,
+      var(--bg-color) 0, var(--bg-color) 90px,
+      var(--main-color) 90px, var(--main-color) 180px);
+  position: absolute;
+  top: 0;
+  color: #2c2c2c;
+  transition: 0.5s;
+}
+
+.label2 {
+  right: 0;
+}
+
+span {
+  display: flex;
+  height: 90px;
+  width: 130px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+input:checked+label {
+  background-position: 0 -90px;
+  color: var(--bg-color);
+  transition: 0.7s;
+}
